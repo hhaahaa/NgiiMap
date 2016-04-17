@@ -27,7 +27,7 @@ function onReady() {
              .bindPopup("latlng: " + latlng2 + ", xy: " + xy2.toString())
              .openPopup();
 
-    //three markers
+    // three markers
     // 서울시청
     // 37.56635278, 126.9779528
     L.marker([37.56635278, 126.9779528]).addTo(map)
@@ -37,8 +37,4 @@ function onReady() {
     L.control.scale().addTo(map);
 
     var locationFilter = new L.LocationFilter().addTo(map);
-
-    var bound = map.getPixelBounds();
-    var origin = map.getPixelOrigin();
-    var size = map.getSize();
 }
