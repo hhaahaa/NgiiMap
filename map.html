@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맞춤형 공간정보제공 시스템</title>
+
+    <link rel="stylesheet" href="lib/leaflet.css" />
+    <link rel="stylesheet" href="lib/locationfilter.css" />
+    <script src="lib/jquery-2.2.3.min.js"></script>
+    <script src="lib/leaflet-src.js"></script>
+    <script src="lib/proj4-compressed.js"></script>
+    <script src="lib/proj4leaflet.js"></script>
+    <script src="lib/Leaflet.KoreanTmsProviders.js"></script>
+    <script src="lib/locationfilter.js"></script>
+    <script src="map_control.js"></script>
+
+	<style>
+		html { height: 100% }
+		body { height: 100%; margin: 0; padding: 0;}
+		.header { height: 50px; width: 100%}
+		.footer { height: 50px; width: 100%}
+		.page_wrap { height: 100%; overflow: hidden; margin: 0; padding: 0;}
+		.map { height: 100%; width: 100%; float: left; }
+		.content { height: 100%; width: 0%; float: left; }
+	</style>
+
+</head>
+<body>
+    <div class="header">이 부분에 헤더가 들어갑니다.</div>
+    <div id="page_wrap" class="page_wrap">
+        <div id="map" class="map"></div>
+
+        <div id="info_wrap" class="content">
+            이 부분에 일반 컨텐츠가 들어갑니다.
+        </div>
+    </div>
+    <div class="footer">이 부분에 풋터가 들어갑니다.</div>
+</body>
+</html>
